@@ -1,8 +1,11 @@
 <?php
-if(isset($_POST['email'])) {
- 
-    // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "kashyapshashank@live.com";
-    $email_subject = "Form data";
-     }
- 
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+	$comment = $_POST['comment'];
+    $from = 'From: enactusvitvellore'; 
+    $to = 'kashyapshashank@live.com'; 
+    $subject = 'Form Data';
+
+    $body = "From: $name\n E-Mail: $email\n Phone:\n $phone\n Comment:\n $comment";
+?>
