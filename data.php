@@ -2,7 +2,7 @@
     $name = $_POST['name'];
     $email = $_POST['email'];
     $phone = $_POST['phone'];
-	$comment = $_POST['comment'];
+    $comment = $_POST['comment'];
     $from = 'From: enactusvitvellore'; 
     $to = 'kashyapshashank@live.com'; 
     $subject = 'Form Data';
