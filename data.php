@@ -10,7 +10,7 @@ echo $comment = $_POST['comment'];
 
  $mailBody="From: $name\n E-Mail: $email\n Phone:\n $phone\n Comment:\n $comment"; 
 
- mail($recipient, $subject, $mailBody, $email);
+ $mail($recipient, $subject, $mailBody, $email);
 
 }
 ?>
