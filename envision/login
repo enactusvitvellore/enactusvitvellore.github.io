@@ -1,5 +1,9 @@
 {
   "login": [
+  {
+      "Name": "Emulator", 
+      "key": "63e10556ecefac95ca640ac427f88589e507c20c"
+    },
     {
       "Name": "Shashank kumar", 
       "key": "8ece55f052c7cc49880c5f786cd6c8524cc2536b"
