@@ -1,1 +1,1 @@
-1.1 link
+1.1 https://github.com/kashyapshashankv/envision_dialer_updates/releases/download/1.1/Envision_dialer_1.1.apk
