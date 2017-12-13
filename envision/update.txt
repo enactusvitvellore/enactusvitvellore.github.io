@@ -1,8 +1,8 @@
 {
   "Update": [
     {
-      "version": "2.16", 
-      "url": "https://github.com/kashyapshashankv/envision_dialer_updates/releases/download/2.16/Envision_dialer_2.16.apk"
+      "version": "2.17", 
+      "url": "https://github.com/kashyapshashankv/envision_dialer_updates/releases/download/2.17/Envision_dialer.apk"
     }
   ]
 }
