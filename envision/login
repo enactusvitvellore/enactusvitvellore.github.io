@@ -43,6 +43,14 @@
     {
       "Name": "Utsav", 
       "key": "f331f807696c1b3f09d11622eea29c50a809ca90"
+    }, 
+    {
+      "Name": "Phone 1 (Kajal Zenfone Max)", 
+      "key": "f3bace5eded80a931c37be52ebc2c58bb7a99a44"
+    }, 
+    {
+      "Name": "Phone 2 (Shashank Moto E1)", 
+      "key": "c7a5aab26afcdd02579d2aef2d125757b8a0f4cf"
     }
   ]
 }
