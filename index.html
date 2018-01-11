@@ -11,288 +11,12 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="static/assets/header.png" />
+	<link rel="stylesheet" href="./styles.css">
 	<script src="static/js/jquery.js"></script>
 	<script src="static/js/bootstrap.js"></script>
 
 
 
-	<style>
-		* {
-			padding: 0px;
-			margin: 0px;
-		}
-
-		body {
-			background-color: #e6e6e6;
-			overflow: auto;
-
-		}
-
-		.cl_white {
-			background-color: white;
-		}
-
-		.fc {
-			font-family: Roboto, sans-serif;
-			color: #1d6152;
-			font-weight: 100;
-			line-height: 1em;
-		}
-
-		.fc-r2 {
-			margin-top: 10%;
-			font-family: Roboto Condensed, sans-serif;
-			font-size: 4.9em;
-			font-weight: 100;
-			line-height: 1em;
-			letter-spacing: 0.05em;
-			color: black;
-		}
-
-		.fc-r1 {
-			font-family: Roboto, sans-serif;
-			text-transform: uppercase;
-			color: black;
-			font-size: 2 em;
-			font-weight: 100;
-			line-height: 1em;
-		}
-
-		.fc-lg {
-			font-family: Roboto, sans-serif;
-			text-transform: uppercase;
-			color: #1d6152;
-			font-size: 1.0em;
-			font-weight: 100;
-			line-height: 1em;
-		}
-
-		.parallax {
-			background-image: url("background.jpg");
-			background-size: 100% 100%;
-			height: 100%;
-			min-height: 700px;
-			background-attachment: fixed;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
-
-		.submit {
-			background-color: transparent;
-			border-radius: 0 !important;
-			background-color: #f6b229;
-			color: white;
-			font-weight: bold;
-			border-color: #f6b229;
-		}
-
-		.submit:hover {
-			background-color: #f6b229;
-			color: white;
-			border-color: #f6b229;
-		}
-
-		#email {
-			border-radius: 0 !important;
-			font-style: italic;
-		}
-
-		.bottom-border {
-			border-bottom: 2px solid #f6b229;
-		}
-
-		.yellow {
-			background-color: #f6b229;
-		}
-
-		#large {
-			height: 5%;
-		}
-
-		.white {
-			color: white;
-		}
-
-		.cform {
-			padding: 8px;
-			font-family: Roboto, sans-serif;
-			text-transform: uppercase;
-			font-weight: 100;
-			line-height: 1em;
-			font-weight: bold;
-			border-radius: 0 !important;
-			background: transparent;
-			border-width: 2px;
-			border-color: white;
-			color: white;
-		}
-
-		.cback {
-			background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("static/assets/contact.jpg");
-			background-color: rgba(0, 0, 0, 0.5);
-			background-size: 100% 100%;
-			height: 100%;
-			min-height: 700px;
-		}
-
-		html,
-		body {
-			width: auto !important;
-			overflow-x: hidden !important;
-		}
-
-		.text-justify {
-			text-align: justify;
-			font-size: 15px;
-			;
-		}
-
-		.shadow {
-			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-		}
-
-		.hdr {
-			display: flex;
-			justify-content: center;
-			background: rgb(90, 73, 40);
-			color: orange;
-			padding: 2%;
-		}
-
-		.quote {
-			background: #757F9A;
-			background: linear-gradient(#757F9A, #859398);
-			margin-top: 0%;
-			font-size: 4.9em;
-			font-weight: 100;
-			letter-spacing: 0.05em;
-			color: white;
-		}
-
-		.team {
-			background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("static/assets/my.jpg");
-			background-size: 100% 100%;
-			height: 100%;
-			min-height: 610px;
-			color: white;
-		}
-
-		.project-text {
-			padding: 10px;
-			font-family: Roboto;
-			font-size: 19px;
-			font-weight: bold;
-		}
-
-		.faq {
-			font-size: 25px;
-			display: flex;
-			justify-content: center;
-			color: black;
-			margin: 20px 0px 0px 20px;
-			padding: 1%;
-			background: orange;
-		}
-
-		.faq1 {
-			font-size: 20px;
-			color: black;
-			margin: 20px 0px 0px 20px;
-			padding: 1%;
-		}
-
-		.faq2 {
-			font-size: 23px;
-			display: flex;
-			justify-content: center;
-			color: black;
-			font-weight: 500;
-			margin: 20px 0px 0px 20px;
-			padding: 1%;
-			background: orange;
-		}
-
-		.about-text {
-			font-family: Roboto;
-			font-weight: bold;
-			font-size: 16px;
-		}
-
-		#wrapper {
-			position: relative;
-		}
-
-		#FAQ{
-			margin-bottom: 40px;
-		}
-
-		#over_map {
-			position: absolute;
-			top: 10px;
-			left: 10px;
-			z-index: 99;
-			color: black;
-			opacity: 0.8;
-			min-height: 200px;
-			min-width: 250px;
-		}
-
-		.form-control::-webkit-input-placeholder {
-			color: white;
-		}
-
-		/* WebKit, Blink, Edge */
-
-		.form-control:-moz-placeholder {
-			color: white;
-		}
-
-		/* Mozilla Firefox 4 to 18 */
-
-		.form-control::-moz-placeholder {
-			color: white;
-		}
-
-		/* Mozilla Firefox 19+ */
-
-		.form-control:-ms-input-placeholder {
-			color: white;
-		}
-
-		/* Internet Explorer 10-11 */
-
-		.form-control::-ms-input-placeholder {
-			color: white;
-		}
-
-		/* Microsoft Edge */
-
-		.last-button {
-			background-color: transparent;
-			color: white;
-			font-weight: bold;
-			border-radius: 0 !important;
-			border: 2px solid white;
-		}
-
-		.last-button:hover {
-			background-color: white;
-			color: black;
-			border: 2px solid white;
-		}
-
-		@media only screen and (max-width: 500px) {
-			#last-link {
-				padding-top: 10px;
-			}
-			@media only screen and (max-width: 500px) {
-				.parallax {
-					min-height: 700px;
-				}
-			}
-		}
-	</style>
 
 	<script>
 		var head = document.getElementsByTagName('head')[0];
@@ -345,7 +69,7 @@
 					<li>
 						<a href="#contact">CONTACT</a>
 					</li>
-					
+
 
 				</ul>
 			</div>
@@ -478,84 +202,6 @@
 				</div>
 			</div>
 		</section>
-		<section id="FAQ" class="container">
-			<header>
-				<h2 class="hdr">FREQUENTLY ASKED QUESTIONS</h2>
-			</header>
-			<div id="questions">
-				<div class="col-md-12 col-sm-6 col-xs-6">
-					<a href="#faq1" class="faq" data-toggle="collapse">What is Enactus?</a>
-					<div id="faq1" class="collapse faq1">
-						Enactus is a community of student, academic and business leaders committed to use the power of entrepreneurial action to
-						transform lives and shape a more sustainable world.
-					</div>
-				</div>
-				<div class="col-md-12 col-sm-6 col-xs-6">
-					<a href="#faq2" class="faq" data-toggle="collapse">How active is Enactus in VIT?</a>
-					<div id="faq2" class="collapse faq1">
-						Enactus is a community of student, academic and business leaders committed to use the power of entrepreneurial action to
-						transform lives and shape a more sustainable world.
-					</div>
-				</div>
-				<div class="col-md-12 col-sm-6 col-xs-6">
-					<a href="#faq3" class="faq" data-toggle="collapse">What makes it an Enactus project?</a>
-					<div id="faq3" class="collapse faq1">
-						The key to Enactus is empowerment and sustainability. Projects need to make sure they pass on skills or knowledge that can
-						be used again without assistance, this is to ensure the solution is sustainable and lasts for the long-term.
-					</div>
-				</div>
-				<div class="col-md-12 col-sm-6 col-xs-6">
-					<a href="#faq4" class="faq" data-toggle="collapse">Why Envision?</a>
-					<div id="faq4" class="collapse faq1">
-						We at Enactus VIT believe that we are capable of generating employment for the visually challenged. Our vision is to make
-						the visually impaired self sufficient by providing them the skills and means to earn through a BPO.
-					</div>
-				</div>
-
-				<!-- <div class="col-md-12 col-sm-6 col-xs-6">
-					<a href="#faq5" class="faq" data-toggle="collapse">Why Envision?</a>
-					<div id="faq5" class="collapse faq1">
-						We at Enactus VIT believe that we are capable of generating employment for the visually challenged. Our vision is to make
-						the visually impaired self sufficient by providing them the skills and means to earn through a BPO.
-					</div>
-				</div> -->
-				<div class="col-md-12 col-sm-6 col-xs-6">
-					<a href="#faq6" class="faq" data-toggle="collapse">How does our project aim to attain sustainability?</a>
-					<div id="faq6" class="collapse faq1">
-						Project Envision will involve the hiring of visually challenged people in BPOs. Once our project moves past its pilot stage,
-						the employees would be able to make calls from their own houses. We would help them establish direct contact with their
-						employer and then, de-link ourselves from the project.
-					</div>
-				</div>
-				<div class="col-md-12 col-sm-6 col-xs-6">
-					<a href="#faq7" class="faq" data-toggle="collapse">What are the goals and objectives of Project Envision?</a>
-					<div id="faq7" class="collapse faq1">
-						<ul>
-							<li> <strong> PROVIDE</strong> Fulfilling the telemarketing requirement of a company and providing the customers with telemarketing services.
-							</li>
-							<br>
-							<li> <strong> EMPOWER</strong> a community of visually challenged so as to augment and stabilise their income.</li>
-						</ul>
-					</div>
-				</div>
-
-
-				<div class="col-md-12 col-sm-6 col-xs-6">
-					<a href="#faq8" class="faq2" data-toggle="collapse">Can I ( a visually impaired person ) living outside Vellore be a part of this project?</a>
-					<div id="faq8" class="collapse faq1">
-						Currently, we are in the testing phase. Once we branch out, people from outside would be allowed to join our team.
-					</div>
-				</div>
-				<div class="col-md-12 col-sm-6 col-xs-6">
-					<a href="#faq9" class="faq" data-toggle="collapse"> Is there scope for students to volunteer?</a>
-					<div id="faq9" class="collapse faq1">
-						Yes, student volunteers are always welcome! Mail us at enactusvitvellore@gmail.com to get in touch with us.
-					</div>
-				</div>
-
-
-			</div>
-		</section>
 
 		<section id="contact" class="fc-lg white container">
 			<div class="row">
@@ -625,6 +271,194 @@
 
 			</div>
 		</section>
+
+		<section id="FAQ" class="cl_white" style="min-height: 700px;">
+			<header>
+				<div class="page-header fc-r1" style="border-bottom:none;">
+					<br>
+					<h1 class="text-center" style="font-size:3.5em;">FAQ</h1>
+					<br>
+					<br>
+				</div>
+			</header>
+			<div class="col-md-12">
+				<div class="panel-group" id="faqAccordion">
+					<div class="panel panel-default ">
+						<div style="background-color: #f6b229;" class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion"
+						 data-target="#question0">
+							<h4 class="panel-title">
+								<p style="font-size: 25px;"> What is Enactus?</p>
+							</h4>
+
+						</div>
+						<div id="question0" class="panel-collapse collapse" style="height: 0px;">
+							<div class="panel-body">
+								<h5>
+									<span class="label label-primary">Answer</span>
+								</h5>
+
+								<p>Enactus is a community of student, academic and business leaders committed to use the power of entrepreneurial action to
+										transform lives and shape a more sustainable world.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default ">
+						<div style="background-color: #f6b229;"  class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion"
+						 data-target="#question1">
+							<h4 class="panel-title">
+								<p style="font-size: 25px;"> How active is Enactus in VIT?</p>
+							</h4>
+
+						</div>
+						<div id="question1" class="panel-collapse collapse" style="height: 0px;">
+							<div class="panel-body">
+								<h5>
+									<span class="label label-primary">Answer</span>
+								</h5>
+
+								<p>Enactus is a community of student, academic and business leaders committed to use the power of entrepreneurial action to
+										transform lives and shape a more sustainable world
+										.</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default ">
+						<div style="background-color: #f6b229;" class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion"
+						 data-target="#question2">
+							<h4 class="panel-title">
+									<p style="font-size: 25px;">What makes it an Enactus project?</p>
+							</h4>
+
+						</div>
+						<div id="question2" class="panel-collapse collapse" style="height: 0px;">
+							<div class="panel-body">
+								<h5>
+									<span class="label label-primary">Answer</span>
+								</h5>
+
+								<p>The key to Enactus is empowerment and sustainability. Projects need to make sure they pass on skills or knowledge that can
+										be used again without assistance, this is to ensure the solution is sustainable and lasts for the long-term.</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default ">
+						<div style="background-color: #f6b229;" class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion"
+						 data-target="#question3">
+							<h4 class="panel-title">
+									<p style="font-size: 25px;">Why Envision?</p>
+							</h4>
+
+						</div>
+						<div id="question3" class="panel-collapse collapse" style="height: 0px;">
+							<div class="panel-body">
+								<h5>
+									<span class="label label-primary">Answer</span>
+								</h5>
+
+								<p>We at Enactus VIT believe that we are capable of generating employment for the visually challenged. Our vision is to make
+										the visually impaired self sufficient by providing them the skills and means to earn through a BPO. </p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="panel panel-default ">
+						<div style="background-color: #f6b229;" class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion"
+						 data-target="#question4">
+							<h4 class="panel-title">
+									<p style="font-size: 25px;">How does our project aim to attain sustainability?</p>
+							</h4>
+
+						</div>
+						<div id="question4" class="panel-collapse collapse" style="height: 0px;">
+							<div class="panel-body">
+								<h5>
+									<span class="label label-primary">Answer</span>
+								</h5>
+
+								<p>Project Envision will involve the hiring of visually challenged people in BPOs. Once our project moves past its pilot stage,
+										the employees would be able to make calls from their own houses. We would help them establish direct contact with their
+										employer and then, de-link ourselves from the project. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default ">
+						<div style="background-color: #f6b229;" class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion"
+						 data-target="#question5">
+							<h4 class="panel-title">
+									<p style="font-size: 25px;">What are the goals and objectives of Project Envision?</p>
+							</h4>
+
+						</div>
+						<div id="question5" class="panel-collapse collapse" style="height: 0px;">
+							<div class="panel-body">
+								<h5>
+									<span class="label label-primary">Answer</span>
+								</h5>
+
+								<ul>
+										<li>
+											<strong> PROVIDE</strong> Fulfilling the telemarketing requirement of a company and providing the customers with telemarketing
+											services.
+										</li>
+										<br>
+										<li>
+											<strong> EMPOWER</strong> a community of visually challenged so as to augment and stabilise their income.</li>
+									</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default ">
+						<div style="background-color: #f6b229;" class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion"
+						 data-target="#question6">
+							<h4 class="panel-title">
+									<p style="font-size: 25px;;">Can I ( a visually impaired person ) living outside Vellore be a part of this project?</p>
+							</h4>
+
+						</div>
+						<div id="question6" class="panel-collapse collapse" style="height: 0px;">
+							<div class="panel-body">
+								<h5>
+									<span class="label label-primary">Answer</span>
+								</h5>
+
+								<p>Currently, we are in the testing phase. Once we branch out, people from outside would be allowed to join our team. </p>
+							</div>
+						</div>
+					</div>
+
+
+
+
+					<div class="panel panel-default ">
+						<div style="background-color: #f6b229;" class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion"
+						 data-target="#question7">
+							<h4 class="panel-title">
+									<p style="font-size: 25px;"> Is there scope for students to volunteer?</p>
+							</h4>
+
+						</div>
+						<div id="question7" class="panel-collapse collapse" style="height: 0px;">
+							<div class="panel-body">
+								<h5>
+									<span class="label label-primary">Answer</span>
+								</h5>
+
+								<p>Yes, student volunteers are always welcome! Mail us at enactusvitvellore@gmail.com to get in touch with us. </p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--/panel-group-->
+			</div>
+		</section>
+
+		
+
 		<section class="container cl_white" style="min-height:100px;">
 			<br>
 			<div class="row">
@@ -659,7 +493,7 @@
 			</div>
 		</section>
 
-		
+
 
 		<script>
 			function myMap() {
@@ -675,7 +509,7 @@
 			$(document).ready(function () {
 				// smooth scrolling
 				$(function () {
-					$('a[href*="#"]:not([href="#"]):not([href="#faq1"]):not([href="#faq2"]):not([href="#faq3"]):not([href="#faq4"]):not([href="#faq5"]):not([href="#faq6"]):not([href="#faq7"]):not([href="#faq8"]):not([href="#faq9"])').click(function () {
+					$('a[href*="#"]:not([href="#"])').click(function () {
 						if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 							var target = $(this.hash);
 							target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
