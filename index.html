@@ -1,294 +1,166 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Enactus-VIT</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width= device-width, initial-scale=1">
-		<link rel="stylesheet" href="static/css/bootstrap.css">
-		<link rel="stylesheet" href="static/css/main.css" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
-		<link rel="shortcut icon" href="static/assets/header.png" />
-		<script src="static/js/jquery.js"></script>
-		<script src="static/js/bootstrap.js"></script>
-		
-		
-				
-		<style>
-			*{
-			padding:0px;
-			margin:0px;
-			}
-			body{
-				background-color:#e6e6e6;
-				overflow-x:;
-				
-			}
-			.cl_white
-			{
-				background-color: white;
-			}
-			.fc{
-				font-family: Roboto, sans-serif;
-				color: #1d6152;
-				font-weight: 100;
-				line-height: 1em;
-			}
-			.fc-r2{
-				margin-top:10%;
-				font-family: Roboto Condensed, sans-serif;
-				font-size: 4.9em;
-				font-weight: 100;
-				line-height: 1em;
-				letter-spacing: 0.05em;
-				color: black;
-			}
-			.fc-r1{
-				font-family: Roboto, sans-serif;
-				text-transform: uppercase;
-				color: black;
-				font-size: 2 em;
-				font-weight: 100;
-				line-height: 1em;
-			}
-			.fc-lg{
-				font-family: Roboto, sans-serif;
-				text-transform: uppercase;
-				color: #1d6152;
-				font-size: 1.0em;
-				font-weight: 100;
-				line-height: 1em;
-			}
-			.parallax {
-				background-image:  url("background.jpg");
-				background-size: 100% 100%;
-				height: 100%;
-				min-height:700px;
-				background-attachment: fixed;
-				background-position: center;
-				background-repeat: no-repeat;	
-				background-size: cover;
-			}
-			.submit{
-				background-color: transparent;
-				border-radius: 0 !important;
-				background-color: #f6b229;
-				color: white;
-				font-weight:bold;
-				border-color: #f6b229;
-			}
-			.submit:hover{
-				background-color: #f6b229;
-				color: white;
-				border-color: #f6b229;
-			}
-			#email{
-				border-radius: 0 !important;
-				font-style: italic;
-			}
-			.bottom-border{
-				border-bottom : 2px solid #f6b229;
-			}
-			.yellow{
-				background-color: #f6b229;
-			}
-			#large{
-				height: 5%;
-			}
-			.white{
-				color: white;
-			}
-			.cform{
-				padding: 8px;
-				font-family: Roboto, sans-serif;
-				text-transform: uppercase;
-				font-weight: 100;
-				line-height: 1em;
-				font-weight	: bold;
-				border-radius: 0 !important;
-				background: transparent;
-				border-width: 2px;
-				border-color: white;
-				color: white;
-			}
-			.cback{
-				background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("static/assets/contact.jpg");
-				background-color: rgba(0, 0, 0, 0.5);
-				background-size: 100% 100%;
-				height: 100%;
-				min-height:700px;
-			}
-			html, body {
-				width: auto !important;
-				overflow-x: hidden !important;
-			}
-			.text-justify{
-				text-align: justify;
-				font-size: 15px;;
-			}
-			.shadow{
-				box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-			}
-			.quote{
-				background:#757F9A;
-				background: linear-gradient(#757F9A, #859398);
-				margin-top:0%;
-				font-size: 4.9em;
-				font-weight: 100;
-				letter-spacing: 0.05em;
-				color:white;
-			}
-			.team{
-				background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("static/assets/my.jpg");
-				background-size: 100% 100%;
-				height: 100%;
-				min-height:610px;
-				color: white;
-			}
-			.project-text{
-				padding:10px;
-				font-family:Roboto;
-				font-size:19px;
-				font-weight: bold;
-				}
-			.about-text
-			{
-				font-family: Roboto;
-				font-weight: bold;
-				font-size:16px;
-			}
-			
-   #wrapper { position: relative; }
-   #over_map { position: absolute; top: 10px; left: 10px; z-index: 99; color: black; opacity:0.8;min-height:200px;min-width:250px;}
-		.form-control::-webkit-input-placeholder { color: white; }  /* WebKit, Blink, Edge */
-.form-control:-moz-placeholder { color: white; }  /* Mozilla Firefox 4 to 18 */
-.form-control::-moz-placeholder { color: white; }  /* Mozilla Firefox 19+ */
-.form-control:-ms-input-placeholder { color: white; }  /* Internet Explorer 10-11 */
-.form-control::-ms-input-placeholder { color: white; }  /* Microsoft Edge */
-			.last-button{
-				background-color:transparent;color:white;font-weight: bold;border-radius: 0 !important;border: 2px solid white;
-			}
-			.last-button:hover{
-				background-color: white;
-				color: black;
-				border: 2px solid white;
-			}
-			@media only screen and (max-width: 500px) {
-			#last-link {
-					padding-top: 10px;
-			}
-			@media only screen and (max-width: 500px) {
-			.parallax {
-					min-height:700px;
-			}
-}
-		</style>
-		<script>
-			var head = document.getElementsByTagName('head')[0];
 
-			var insertBefore = head.insertBefore;	
+<head>
+	<title>Enactus-VIT</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width= device-width, initial-scale=1">
+	<link rel="stylesheet" href="static/css/bootstrap.css">
+	<link rel="stylesheet" href="static/css/main.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="static/assets/header.png" />
+	<link rel="stylesheet" href="./styles.css">
+	<script src="static/js/jquery.js"></script>
+	<script src="static/js/bootstrap.js"></script>
 
-			head.insertBefore = function (newElement, referenceElement) {
+
+
+
+	<script>
+		var head = document.getElementsByTagName('head')[0];
+
+		var insertBefore = head.insertBefore;
+
+		head.insertBefore = function (newElement, referenceElement) {
 
 			if (newElement.href && newElement.href.indexOf('//fonts.googleapis.com/css?family=Roboto') > -1) {
 
-			console.info('Prevented Roboto from loading!');
-			return;
-		}
+				console.info('Prevented Roboto from loading!');
+				return;
+			}
 
-    insertBefore.call(head, newElement, referenceElement);
-};
-		</script>
-		
-	</head>
-	<body data-spy="scroll" data-target=".navbar">
-		<nav class="navbar navbar-default navbar-fixed-top cl_white container" style="border-bottom: 5px solid #f6b229">
-			<div class="container">
-				<div class="navbar-header"><a class="navbar-brand" href="#"><span><img src="static/assets/logo1.png" style="max-width:95px;margin:-25px;"></span></a>
-					<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			insertBefore.call(head, newElement, referenceElement);
+		};
+	</script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+	<nav class="navbar navbar-default navbar-fixed-top cl_white container" style="border-bottom: 5px solid #f6b229">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">
+					<span>
+						<img src="static/assets/logo1.png" style="max-width:95px;margin:-25px;">
+					</span>
+				</a>
+				<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
-					</a>
-				</div>
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right" style="padding-right:15px">
-						<li class="active"><a href="#home">HOME</a></li>
-						<li><a href="#about">ABOUT</a></li>
-						<li><a href="#projects">PROJECTS</a></li>
-						<li><a href="#contact">CONTACT</a></li>
-						
-					</ul>
-				</div>
+				</a>
 			</div>
-		</nav>
-		<section id="home" class="container parallax">
-			<div style="margin-top:80px;">
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right" style="padding-right:15px">
+					<li class="active">
+						<a href="#home">HOME</a>
+					</li>
+					<li>
+						<a href="#about">ABOUT</a>
+					</li>
+					<li>
+						<a href="#projects">PROJECTS</a>
+					</li>
+					<li>
+						<a href="#FAQ">FAQ</a>
+					</li>
+					<li>
+						<a href="#contact">CONTACT</a>
+					</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home" class="container parallax">
+		<div style="margin-top:80px;">
 			<div class="fc-r2">
 				<div class="row">
 					<div class="col-md-7"></div>
 					<div class="col-md-5">
 						<h1 class="bottom-border">Enactus-VIT Vellore</h1>
 					</div>
-			</div>
-			<div class="fc-r1 a">	
-				<div class="row">
-					<div class="col-md-7"></div>
-					<div class="col-md-5">
-						<h2>Changing lives through<br> <b>en</b>trepreneurial<br><b>act</b>ion.</h2>
+				</div>
+				<div class="fc-r1 a">
+					<div class="row">
+						<div class="col-md-7"></div>
+						<div class="col-md-5">
+							<h2>Changing lives through
+								<br>
+								<b>en</b>trepreneurial
+								<br>
+								<b>act</b>ion.</h2>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="row">
+						<div class="col-md-7"></div>
+						<div class="col-md-5">
+							<form class="form-inline fc">
+
+								<input type="email" class="form-control place1" id="email" placeholder="your@email.com" style="width:70%;font-weight:bold;">
+								<button type="submit" class="btn btn-default submit shadow">
+									<i class="fa fa-paper-plane" aria-hidden="true"></i>Subscribe</button>
+
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div>
-				<div class="row">
-				<div class="col-md-7"></div>
-				<div class="col-md-5">
-					<form class="form-inline fc">
-						
-						<input type="email" class="form-control place1" id="email" placeholder="your@email.com" style="width:70%;font-weight:bold;">
-						<button type="submit" class="btn btn-default submit shadow"><i class="fa fa-paper-plane" aria-hidden="true"></i>Subscribe</button>
-						
-					</form>
-				</div>
-				</div>
-			</div>
-			</div>	
-		</section>
-		<div style="overflow:auto;">
+	</section>
+	<div style="overflow:auto;">
 		<section id="about" class="container cl_white" style="min-height: 700px;">
 			<div class="page-header fc-r1" style="border-bottom:none;">
 				<br>
 				<h1 class="text-center" style="font-size:3.5em;">What is Enactus?</h1>
-				<br><br>
+				<br>
+				<br>
 			</div>
 			<div class="col-md-4">
 				<div class="thumbnail shadow" style="border: none; border-radius:0;">
 					<img src="static/assets/en.png" style="max-width:100px; padding-top:10px;">
 					<div classs="caption">
-						<h3 class="text-center"><b>EN</b>trepreneurial</h3>
+						<h3 class="text-center">
+							<b>EN</b>trepreneurial</h3>
 					</div>
 					<!--Enactus is an international nonprofit organization dedicated to inspiring students to improve the world through entrepreneurial action.-->
-					<p class="text-center text-justify about-text" style="padding:10px;">Guided by educators and supported by business leaders, the students take the kind of entrepreneurial approach that empowers people to be a part of their own success. We provide a platform for students to create community development projects that put people’s own ingenuity and talents at the center of improving their livelihoods. Our projects generate sustainable solutions that rejuvenate communities and give hope to those who need it most. </p>
+					<p class="text-center text-justify about-text" style="padding:10px;">Guided by educators and supported by business leaders, the students take the kind of entrepreneurial approach that empowers
+						people to be a part of their own success. We provide a platform for students to create community development projects
+						that put people’s own ingenuity and talents at the center of improving their livelihoods. Our projects generate sustainable
+						solutions that rejuvenate communities and give hope to those who need it most. </p>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="thumbnail shadow" style="border: none;border-radius:0;">
 					<img src="static/assets/act.png" style="max-width:85px;padding-top:10px;">
 					<div classs="caption">
-						<h3 class="text-center"><b>ACT</b>ion</h3>
+						<h3 class="text-center">
+							<b>ACT</b>ion</h3>
 					</div>
 					<!--We believe that competition encourages creativity and rewards results, it means more lives impacted. An annual series of regional and national competitions provides a forum for teams to showcase the impact of their outreach efforts and to be evaluated by executives serving as judges. National champion teams advance to the prestigious Enactus World Cup to experience excellence in competition, collaboration and celebration.-->
-					<p class="text-center text-justify about-text" style="padding:10px;">Enactus teams not only see opportunities others might overlook, but they seize them, transform ideas into action and action into progress. We believe that competition encourages creativity and rewards results, it means more lives impacted. An annual series of regional and national competitions provides a forum for teams to showcase the impact of their outreach efforts and to be evaluated by executives serving as judges.</p>	<br>
+					<p class="text-center text-justify about-text" style="padding:10px;">Enactus teams not only see opportunities others might overlook, but they seize them, transform ideas into action and
+						action into progress. We believe that competition encourages creativity and rewards results, it means more lives impacted.
+						An annual series of regional and national competitions provides a forum for teams to showcase the impact of their outreach
+						efforts and to be evaluated by executives serving as judges.</p>
+					<br>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="thumbnail shadow" style="border: none;border-radius:0;">
 					<img src="static/assets/us.png" style="max-width:110px;padding-top:11px;">
 					<div classs="caption">
-						<h3 class="text-center"><b>US</b></h3>
+						<h3 class="text-center">
+							<b>US</b>
+						</h3>
 					</div>
-					<p class="text-center text-justify about-text" style="padding:8px;">Enactus is an international nonprofit organization dedicated to inspiring students to improve the world through entrepreneurial action. A community of student, academic and business leaders committed to using the power of entrepreneurial action to transform lives and shape a better more sustainable world. Our work transforms both the lives of the people we serve, and in turn, the lives of the students. </p>
+					<p class="text-center text-justify about-text" style="padding:8px;">Enactus is an international nonprofit organization dedicated to inspiring students to improve the world through entrepreneurial
+						action. A community of student, academic and business leaders committed to using the power of entrepreneurial action
+						to transform lives and shape a better more sustainable world. Our work transforms both the lives of the people we serve,
+						and in turn, the lives of the students. </p>
 					<br>
 				</div>
 			</div>
@@ -299,7 +171,7 @@
 				<p class="mb-0">"Problems can become opportunities when the right people come together."</p>
 				<br>
 				<footer class="blockquote-footer" style="color:white;">Robert Redford</footer>
-				
+
 			</blockquote>
 		</section>
 		<section id="projects" class="container" style="min-height: 620px;background-color:#f5f4f0;">
@@ -310,96 +182,340 @@
 					<img src="static/assets/project.png" class="img-responsive" style="padding-top:15px;margin: 0 auto;">
 				</div>
 				<div class="col-md-8">
-					<p class="text-justify project-text">Project Envision, a venture by Enactus in association with CSRD-RS VIT University, centred at Vellore, has a motive of training and employing the visually challenged in a fully functional call centre.
-The aim of this project is to ensure that barriers are broken down in the community by proving that there is no significant gap in the employability skills of visually handicapped people and everyone else in many fields. Currently, there are multiple projects by various NGOs that focus on helping physically handicapped people but there is a major scarcity of initiatives for visually handicapped. 
-</p>
-					<p class="text-justify project-text">Through this project, we wish to inspire the visually challenged to use their differently advanced skills to become independent. Employment will not only make them financially independent, but will also help them gain the equal status in the society. Project Envision focuses on achieving a number of UN goals such as reducing poverty, generating employment and economic growth.</p>
-					<a href="static/assets/brochure.pdf"><input type="submit" class="btn btn-default btn-lg submit shadow" value="Download Brochure" style="margin:10px; font-weight:normal;"></a>
-				<br><br><br>
+					<p class="text-justify project-text">Project Envision, a venture by Enactus in association with CSRD-RS VIT University, centred at Vellore, has a motive
+						of training and employing the visually challenged in a fully functional call centre. The aim of this project is to
+						ensure that barriers are broken down in the community by proving that there is no significant gap in the employability
+						skills of visually handicapped people and everyone else in many fields. Currently, there are multiple projects by various
+						NGOs that focus on helping physically handicapped people but there is a major scarcity of initiatives for visually
+						handicapped.
+					</p>
+					<p class="text-justify project-text">Through this project, we wish to inspire the visually challenged to use their differently advanced skills to become
+						independent. Employment will not only make them financially independent, but will also help them gain the equal status
+						in the society. Project Envision focuses on achieving a number of UN goals such as reducing poverty, generating employment
+						and economic growth.</p>
+					<a href="static/assets/brochure.pdf">
+						<input type="submit" class="btn btn-default btn-lg submit shadow" value="Download Brochure" style="margin:10px; font-weight:normal;">
+					</a>
+					<br>
+					<br>
+					<br>
 				</div>
 			</div>
 		</section>
+
 		<section id="contact" class="fc-lg white container">
 			<div class="row">
-				<div id="wrapper" >
-				<div id="map" class="col-md-8" style="height:610px;">			
-						
-				</div>	
-				<div id="over_map" class="col-md-3 col-offset-md-4 cl_white" style="margin-top:10%;; padding:10px;padding-left:20px;text-transform:none;">
-					<h2>Location</h2><br>
-					<p><b>VIT University</p>
-					<p>Vellore, Tamil Nadu</p>
-					<p>632014</b></p>
+				<div id="wrapper">
+					<div id="map" class="col-md-8" style="height:610px;">
+
+					</div>
+					<div id="over_map" class="col-md-3 col-offset-md-4 cl_white" style="margin-top:10%;; padding:10px;padding-left:20px;text-transform:none;">
+						<h2>Location</h2>
+						<br>
+						<p>
+							<b>VIT University</p>
+						<p>Vellore, Tamil Nadu</p>
+						<p>632014</b>
+						</p>
+					</div>
 				</div>
-				</div>
-				<div class="col-md-4" style="background-color: #f6b229;height:610px;overflow:hidden;">	
-					<h2 class="text-center">Contact us</h2><br>
+				<div class="col-md-4" style="background-color: #f6b229;height:610px;overflow:hidden;">
+					<h2 class="text-center">Contact us</h2>
+					<br>
 					<div style="text-align:center;">
-						<a href="https://www.facebook.com/EnactusVit/"><img src="static/assets/icobt2.png" style="max-width:20px;margin:2px;"></a>
-						<a href="https://www.linkedin.com/company/13602036/"><img src="static/assets/in.png" style="max-width:20px;margin:2px;"></a>
+						<a href="https://www.facebook.com/EnactusVit/">
+							<img src="static/assets/icobt2.png" style="max-width:20px;margin:2px;">
+						</a>
+						<a href="https://www.linkedin.com/company/13602036/">
+							<img src="static/assets/in.png" style="max-width:20px;margin:2px;">
+						</a>
 					</div>
 					<hr>
-					<form action="https://formspree.io/enactusvitvellore@gmail.com" method="post" >
-						
+					<form action="https://formspree.io/enactusvitvellore@gmail.com" method="post">
+
 						<div class="form-group">
 							<input class="form-control cform" name="name" placeholder="Insert your Name" type="text">
-						</div><br>
+						</div>
+						<br>
 						<div class="form-group">
 							<input class="form-control cform" name="email" placeholder="Insert your Email" type="text">
-						</div><br>
+						</div>
+						<br>
 						<div class="form-group">
 							<input class="form-control cform" name="phone" placeholder="Phone number" type="text">
-						</div><br>
+						</div>
+						<br>
 						<div class="form-group">
 							<textarea class="form-control cform" rows="5" name="comment" placeholder="Comments"></textarea>
-						</div><br>
+						</div>
+						<br>
 						<div class="form-group">
 							<input class="btn btn-default last-button" type="submit" value="SUBMIT">
-						<hr>
+							<hr>
 						</div>
-						
+
 					</form>
-					<h4 style="text-transform: lowercase;"><span><img src="static/assets/icobt.png" style="max-width:20px;margin:2px;"></span> <b>9003197047</b></h4>
-					<h4 style="text-transform: lowercase;"><span><img src="static/assets/icobt1.png" style="max-width:20px;margin:2px;"></span> <b>enactusvitvellore@gmail.com</b></h4>	
+					<h4 style="text-transform: lowercase;">
+						<span>
+							<img src="static/assets/icobt.png" style="max-width:20px;margin:2px;">
+						</span>
+						<b>9003197047</b>
+					</h4>
+					<h4 style="text-transform: lowercase;">
+						<span>
+							<img src="static/assets/icobt1.png" style="max-width:20px;margin:2px;">
+						</span>
+						<b>enactusvitvellore@gmail.com</b>
+					</h4>
 				</div>
-				
+
 			</div>
 		</section>
+
+		<section id="FAQ" class="cl_white" style="min-height: 700px;">
+			<header>
+				<div class="page-header fc-r1" style="border-bottom:none;">
+					<br>
+					<h1 class="text-center" style="font-size:3.5em;">FAQ</h1>
+					<br>
+					<br>
+				</div>
+			</header>
+			<div class="col-md-12">
+				<div class=" container panel-group" id="faqAccordion">
+					<div class="panel panel-default ">
+						<div style="background-color: #f6b229;"  class=" panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
+						 data-parent="#faqAccordion" data-target="#question0">
+							<h4 class="panel-title">
+								<p style="font-size: 25px;"> What is Enactus?</p>
+							</h4>
+
+						</div>
+						<div id="question0" class="panel-collapse collapse" style="height: 0px;">
+							<div class="panel-body">
+								<div class="container">
+									<p style="font-size: 25px;">Enactus is a community of student, academic and business leaders committed to use the power of entrepreneurial action
+										to transform lives and shape a more sustainable world.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default ">
+						<div style="background-color: #f6b229;" class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse"
+						 data-parent="#faqAccordion" data-target="#question1">
+							<h4 class="panel-title">
+								<p style="font-size: 25px;"> How active is Enactus in VIT?</p>
+							</h4>
+
+						</div>
+						<div id="question1" class="panel-collapse collapse" style="height: 0px;">
+							<div class="panel-body">
+
+
+								<p style="font-size: 25px;">Enactus is a community of student, academic and business leaders committed to use the power of entrepreneurial action
+									to transform lives and shape a more sustainable world .
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default ">
+						<div style="background-color: #f6b229;" class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse"
+						 data-parent="#faqAccordion" data-target="#question2">
+							<h4 class="panel-title">
+								<p style="font-size: 25px;">What makes it an Enactus project?</p>
+							</h4>
+
+						</div>
+						<div id="question2" class="panel-collapse collapse" style="height: 0px;">
+							<div class="panel-body">
+
+
+								<p style="font-size: 25px;">The key to Enactus is empowerment and sustainability. Projects need to make sure they pass on skills or knowledge
+									that can be used again without assistance, this is to ensure the solution is sustainable and lasts for the long-term.</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default ">
+						<div style="background-color: #f6b229;" class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse"
+						 data-parent="#faqAccordion" data-target="#question3">
+							<h4 class="panel-title">
+								<p style="font-size: 25px;">Why Envision?</p>
+							</h4>
+
+						</div>
+						<div id="question3" class="panel-collapse collapse" style="height: 0px;">
+							<div class="panel-body">
+
+
+								<p style="font-size: 25px;">We at Enactus VIT believe that we are capable of generating employment for the visually challenged. Our vision is
+									to make the visually impaired self sufficient by providing them the skills and means to earn through a BPO. </p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="panel panel-default ">
+						<div style="background-color: #f6b229;" class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse"
+						 data-parent="#faqAccordion" data-target="#question4">
+							<h4 class="panel-title">
+								<p style="font-size: 25px;">How does our project aim to attain sustainability?</p>
+							</h4>
+
+						</div>
+						<div id="question4" class="panel-collapse collapse" style="height: 0px;">
+							<div class="panel-body">
+
+
+								<p style="font-size: 25px;">Project Envision will involve the hiring of visually challenged people in BPOs. Once our project moves past its pilot
+									stage, the employees would be able to make calls from their own houses. We would help them establish direct contact
+									with their employer and then, de-link ourselves from the project. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default ">
+						<div style="background-color: #f6b229;" class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse"
+						 data-parent="#faqAccordion" data-target="#question5">
+							<h4 class="panel-title">
+								<p style="font-size: 25px;">What are the goals and objectives of Project Envision?</p>
+							</h4>
+
+						</div>
+						<div id="question5" class="panel-collapse collapse" style="height: 0px;">
+							<div class="panel-body">
+
+
+								<ul>
+									<li>
+										<strong> PROVIDE</strong> Fulfilling the telemarketing requirement of a company and providing the customers with telemarketing
+										services.
+									</li>
+									<br>
+									<li>
+										<strong> EMPOWER</strong> a community of visually challenged so as to augment and stabilise their income.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default ">
+						<div style="background-color: #f6b229;" class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse"
+						 data-parent="#faqAccordion" data-target="#question6">
+							<h4 class="panel-title">
+								<p style="font-size: 25px;">Can I ( a visually impaired person ) living outside Vellore be a part of this project?</p>
+							</h4>
+
+						</div>
+						<div id="question6" class="panel-collapse collapse" style="height: 0px;">
+							<div class="panel-body">
+
+
+								<p style="font-size: 25px;">Currently, we are in the testing phase. Once we branch out, people from outside would be allowed to join our team.
+									</p>
+							</div>
+						</div>
+					</div>
+
+
+
+
+					<div class="panel panel-default ">
+						<div style="background-color: #f6b229;" class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse"
+						 data-parent="#faqAccordion" data-target="#question7">
+							<h4 class="panel-title">
+								<p style="font-size: 25px;"> Is there scope for students to volunteer?</p>
+							</h4>
+
+						</div>
+						<div id="question7" class="panel-collapse collapse" style="height: 0px;">
+							<div class="panel-body">
+
+
+								<p style="font-size: 25px;">Yes, student volunteers are always welcome! Mail us at enactusvitvellore@gmail.com to get in touch with us. </p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--/panel-group-->
+			</div>
+		</section>
+
+
+
 		<section class="container cl_white" style="min-height:100px;">
-		<br>
+			<br>
 			<div class="row">
 				<div class="col-md-3 col-sm-6 col-xs-6">
-				<div class="thumbnail" style="border: none; border-radius:0;">
-					<a href="http://www.vit.ac.in/"><img id="last-link" src="static/assets/vit.jpg" style="max-width:150px; padding-top:25px;"></a>
-				</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-6">
-				<div class="thumbnail" style="border: none; border-radius:0;">
-					<a href="http://enactus.org/"><img id="last-link" src="static/assets/logo.gif" style="max-width:150px; padding-top:10px;"></a>
-				</div>
+					<div class="thumbnail" style="border: none; border-radius:0;">
+						<a href="http://www.vit.ac.in/">
+							<img id="last-link" src="static/assets/vit.jpg" style="max-width:150px; padding-top:25px;">
+						</a>
+					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6">
-				<div class="thumbnail" style="border: none; border-radius:0;">
-					<a href="http://www.vit.ac.in/about/community"><img id="last-link" src="static/assets/csrd.png" style="max-width:150px; padding-top:20px;"></a>
-				</div>
+					<div class="thumbnail" style="border: none; border-radius:0;">
+						<a href="http://enactus.org/">
+							<img id="last-link" src="static/assets/logo.gif" style="max-width:150px; padding-top:10px;">
+						</a>
+					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6">
-				<div class="thumbnail" style="border: none; border-radius:0;">
-					<a href="#home"><img id="last-link" src="static/assets/logo1.jpg" style="max-width:150px; padding-top:10px;"></a>
+					<div class="thumbnail" style="border: none; border-radius:0;">
+						<a href="http://www.vit.ac.in/about/community">
+							<img id="last-link" src="static/assets/csrd.png" style="max-width:150px; padding-top:20px;">
+						</a>
+					</div>
 				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="thumbnail" style="border: none; border-radius:0;">
+						<a href="#home">
+							<img id="last-link" src="static/assets/logo1.jpg" style="max-width:150px; padding-top:10px;">
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>
+
+
+
 		<script>
-					function myMap() {
-					var myCenter = new google.maps.LatLng(12.9716,79.1588);
-					var mapCanvas = document.getElementById("map");
-					var mapOptions = {center: myCenter, zoom: 15};
-					var map = new google.maps.Map(mapCanvas, mapOptions);
-					var marker = new google.maps.Marker({position:myCenter});
-					marker.setMap(map);
-					}
-				</script>
-				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-xVQf9ZC1zbKVg-BPP0BX3sKMxwQf61g&callback=myMap"></script>
-				</body>
+			function myMap() {
+				var myCenter = new google.maps.LatLng(12.9716, 79.1588);
+				var mapCanvas = document.getElementById("map");
+				var mapOptions = { center: myCenter, zoom: 15 };
+				var map = new google.maps.Map(mapCanvas, mapOptions);
+				var marker = new google.maps.Marker({ position: myCenter });
+				marker.setMap(map);
+			}
+
+
+			$(document).ready(function () {
+				// smooth scrolling
+				$(function () {
+					$('a[href*="#"]:not([href="#"])').click(function () {
+						if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+							var target = $(this.hash);
+							target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+							if (target.length) {
+								$('html, body').animate({
+									scrollTop: target.offset().top
+								}, 1000);
+								return false;
+							}
+						}
+					});
+				});
+
+				$(".nav").on("activate.bs.scrollspy", function () {
+					var currentItem = $(".nav li.active > a").text();
+					$('#label span').empty().html(currentItem);
+				})
+
+			});
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-xVQf9ZC1zbKVg-BPP0BX3sKMxwQf61g&callback=myMap"></script>
+</body>
+
 </html>
