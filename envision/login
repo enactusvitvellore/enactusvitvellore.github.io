@@ -49,24 +49,40 @@
       "key": "f331f807696c1b3f09d11622eea29c50a809ca90"
     }, 
     {
-      "Name": "Phone 1 (Kajal Zenfone Max)", 
+      "Name": "Phone 1 (Zenfone Max)", 
       "key": "f3bace5eded80a931c37be52ebc2c58bb7a99a44"
     }, 
     {
-      "Name": "Phone 2 (Shashank Moto E1)", 
+      "Name": "Phone 2 (Moto E1)", 
       "key": "c7a5aab26afcdd02579d2aef2d125757b8a0f4cf"
     }, 
     {
-      "Name": "Phone 3 (Kartik Samsung 8262)", 
+      "Name": "Phone 3 (Samsung 8262)", 
       "key": "cf3427fac33613ce1305eabe7aadc63af0d191a6"
     }, 
     {
-      "Name": "Phone 4 (Shashank LYF)", 
+      "Name": "Phone 4 (LYF phone 1)", 
       "key": "1b11f6b7b5497a13c7e3a2231ab623216ef22191"
     }, 
     {
       "Name": "kajal Singh", 
       "key": "afd20198fedaa0bb6ed9ec7372c14a809fd6fe3e"
+    }, 
+    {
+      "Name": "Phone 5 (Lyf phone 2)", 
+      "key": "ba2068739e20444d85142c987d8a59e8f2ce3308"
+    }, 
+    {
+      "Name": "Phone 6(s3)", 
+      "key": "33a3735e784a91233f1f5ee807bb4e0052fd69d6"
+    }, 
+    {
+      "Name": "Phone 7(htc)", 
+      "key": "dc68cda6962f64664421471204ca3c7bfa5cfd02"
+    }, 
+    {
+      "Name": "Phone 8(Nexus 5)", 
+      "key": "02553fe0918b0f197d7ad069d90352debcccf6b7"
     }
   ]
 }
