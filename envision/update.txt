@@ -2,7 +2,11 @@
   "Update": [
     {
       "version": "2.20", 
-      "url": "https://github.com/kashyapshashankv/envision_dialer_updates/releases/download/2.20/envision2.20.apk"
+      "url": "https://github.com/kashyapshashankv/envision_dialer_updates/releases/download/2.20/envision2.20.apk",
+      "start": "00:00:00", 
+      "stop": "24:00:00",
+      "toast":"Try between working hours",
+      "speak":"Try between working hours"
     }
   ]
 }
